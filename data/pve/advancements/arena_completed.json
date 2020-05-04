@@ -1,0 +1,24 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Survive the Arena"
+        },
+        "description": {
+            "text": "Use your ticket and win"
+        },
+        "icon": {
+            "item": "minecraft:fire_charge"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Arena Completed": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pve:arenaticket"
+}
