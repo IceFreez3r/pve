@@ -1,13 +1,13 @@
-#Function run by "Arenaleader" in State Fight and at ArenaTime 0
+#Function run by "Arenaleader" in State Fight and at Time 0
 
 #Open the gate
 fill -343 32 -53 -343 34 -51 minecraft:air
 #Loot
 execute at @e[tag=ArenaDrop] run summon minecraft:falling_block ~ ~50 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"pve:arena_loot"},Glowing:1b,Time:1}
 #Set State to Cooldown
-scoreboard players set @s ArenaState 3
+scoreboard players set Arena State 3
 #Schedule the Reset in 5 minutes
-scoreboard players set @s ArenaTime 6000
+scoreboard players set Arena Time 6000
 bossbar set minecraft:arena visible false
 
 #give survivors the advancement

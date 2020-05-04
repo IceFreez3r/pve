@@ -1,5 +1,5 @@
-#Function run by "Arenaleader" in State Cooldown and at ArenaTime 0
-# or in State Waiting and at ArenaTime 0 if conditions weren't fulfilled
+#Function run by "Arenaleader" in State Cooldown and at Time 0
+# or in State Waiting and at Time 0 if conditions weren't fulfilled
 
 #Close the gate
 fill -343 32 -53 -343 34 -51 minecraft:nether_brick_fence[north=true,south=true]
@@ -9,9 +9,9 @@ execute at @e[tag=ArenaDrop] run setblock ~ ~ ~ air
 tellraw @a[distance=..13] [{"text":"Too stupid to leave on your own?"}]
 tp @a[distance=..13] -342 32 -52
 #Set State to Ready
-scoreboard players set @e[tag=Arenaleader] ArenaState 0
-#Reset ArenaTime
-scoreboard players set @e[tag=Arenaleader] ArenaTime 0
+scoreboard players set Arena State 0
+#Reset Time
+scoreboard players set Arena Time 0
 bossbar set minecraft:arena visible false
 
 #Tell everyone that the arena is ready again

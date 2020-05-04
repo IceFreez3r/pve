@@ -1,4 +1,4 @@
-#Function run by "Arenaleader" in State Waiting and at ArenaTime 0
+#Function run by "Arenaleader" in State Waiting and at Time 0
 
 execute at @s unless entity @p[nbt={Inventory:[{id: "minecraft:paper", tag: {HideFlags: 1, display: {Lore: ['{"text":"Get ready for the fight!","color":"gray"}'], Name: '{"text":"Arenaticket","color":"dark_red","bold":true}'}, Enchantments: [{lvl: 1s, id: "minecraft:mending"}]}}]}] run tellraw @a[distance=..13] [{"text":"Seems like nobody has a "},{"text":"ticket","color":"dark_purple"},{"text":" anymore. Try not to throw them away next time ;)"}]
 execute at @s unless entity @p[distance=..13] run tellraw @a [{"text":"Seems like everyone fled. The "},{"text":"arenafight","color":"dark_purple"},{"text":" has been canceled."}]
