@@ -1,1 +1,10 @@
 execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNameVisible:1b,Invisible:0b}
+
+#Set the Game State to Paused
+scoreboard players set Game State 0
+
+#Remove temporary armorstands
+kill @e[tag=KillAtEnd]
+
+#Destroy Lootboxes
+execute at @e[tag=Loot] run setblock ~ ~ ~ air

@@ -1,6 +1,7 @@
 #For visualization of times in the arena
 scoreboard objectives add Time dummy
 #All kinds of States, meanings:
+#Game: 0 Paused, 1 Running
 #Arena: 0 Ready, 1 Waiting, 2 Fight, 3 Cooldown
 #Drop: 0..999 Loading, 1000.. Ready
 scoreboard objectives add State dummy
