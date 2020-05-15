@@ -34,7 +34,7 @@
         }
     },
     "rewards": {
-        "function": "pve:loot/acquired_arenaticket"
+        "function": "pve:arena/acquired_arenaticket"
     },
     "parent": "pve:root"
 }

@@ -4,6 +4,8 @@ scoreboard objectives add Time dummy
 #Game: 0 Paused, 1 Running
 #Arena: 0 Ready, 1 Waiting, 2 Fight, 3 Cooldown
 #Drop: 0..999 Loading, 1000.. Ready
+#Enemy: 0..99 Loading, 100.. Spawning
+#Difficulty 0-5 different difficulties
 scoreboard objectives add State dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
