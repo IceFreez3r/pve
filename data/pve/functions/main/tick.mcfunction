@@ -5,9 +5,9 @@ execute if score Game State matches 1 run function pve:loot/tick
 
 execute if score Game State matches 1 run scoreboard players add Game Time 1
 
-execute as @a[gamemode=creative] if entity @s[nbt={SelectedItem:{id:"minecraft:glowstone_dust"}}] run effect give @s minecraft:night_vision 30 0 true
-execute as @a[gamemode=creative] if entity @s[nbt={Inventory:[{Slot:-106b, id:"minecraft:glowstone_dust"}]}] run effect give @s minecraft:night_vision 30 0 true
-execute as @a[gamemode=creative] unless entity @s[nbt={SelectedItem:{id:"minecraft:glowstone_dust"}}] unless entity @s[nbt={Inventory:[{Slot:-106b, id:"minecraft:glowstone_dust"}]}] run effect clear @s minecraft:night_vision
+execute as @a[gamemode=!adventure] if entity @s[nbt={SelectedItem:{id:"minecraft:glowstone_dust"}}] run effect give @s minecraft:night_vision 30 0 true
+execute as @a[gamemode=!adventure] if entity @s[nbt={Inventory:[{Slot:-106b, id:"minecraft:glowstone_dust"}]}] run effect give @s minecraft:night_vision 30 0 true
+execute as @a[gamemode=!adventure] unless entity @s[nbt={SelectedItem:{id:"minecraft:glowstone_dust"}}] unless entity @s[nbt={Inventory:[{Slot:-106b, id:"minecraft:glowstone_dust"}]}] run effect clear @s minecraft:night_vision
 
 execute if score Game Time matches 6000.. if score Difficulty State matches ..0 run function pve:main/difficulty/1
 execute if score Game Time matches 12000.. if score Difficulty State matches ..1 run function pve:main/difficulty/2
