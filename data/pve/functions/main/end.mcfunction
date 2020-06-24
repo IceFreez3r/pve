@@ -3,8 +3,9 @@ execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNa
 #Set the Game State to Paused
 scoreboard players set Game State 0
 
-#Remove temporary armorstands
+#Remove temporary armorstands and enemies
+#TODO: Kill smaller slimes aswell
 kill @e[tag=KillAtEnd]
 
 #Destroy Lootboxes
-execute at @e[tag=Loot] run setblock ~ ~ ~ air
+execute at @e[tag=Loot] run setblock ~ ~ ~ air replace
