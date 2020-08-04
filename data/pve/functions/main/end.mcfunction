@@ -9,3 +9,5 @@ kill @e[tag=KillAtEnd]
 
 #Destroy Lootboxes
 execute at @e[tag=Loot] run setblock ~ ~ ~ air replace
+
+kill @e[type=item]

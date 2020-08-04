@@ -10,6 +10,9 @@ scoreboard objectives add State dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
 
+gamerule forgiveDeadPlayers false
+gamerule universalAnger true
+
 execute if entity @e[type=armor_stand,tag=!Important] run say Warning! There is at least one Armorstand without the tag "Important". Make sure that this is intended.
 execute if entity @e[type=item_frame,tag=!Important] run say Warning! There is at least one Itemframe without the tag "Important". Make sure that this is intended.
 
