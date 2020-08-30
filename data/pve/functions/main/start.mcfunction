@@ -14,7 +14,8 @@ scoreboard players set Difficulty State 0
 execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNameVisible:0b,Invisible:1b}
 #Reset advancements
 advancement revoke @a from pve:root
-
+#Reset Daytime
 time set 12000
 
+function pve:main/reset_blockstates
 function pve:enemies/start
