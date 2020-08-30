@@ -18,7 +18,8 @@ execute if score Difficulty State matches 4 if entity @s[tag=!Small] as @e[tag=m
 execute if score Difficulty State matches 5 if entity @s[tag=!Small] as @e[tag=magma_cube,tag=SpawnMe] run summon magma_cube ~ ~ ~ {PersistenceRequired:1b,Size:7,Tags:["KillAtEnd"]}
 execute as @e[tag=phantom,tag=SpawnMe] run summon phantom ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute if entity @s[tag=Small] as @e[tag=piglin,tag=SpawnMe] run summon piglin ~ ~ ~ {IsBaby:1b,PersistenceRequired:1b,Tags:["KillAtEnd"]}
-execute if entity @s[tag=Ranged,tag=!Small] as @e[tag=piglin,tag=SpawnMe] run summon piglin ~ ~ ~ {IsImmuneToZombification:1b,CannotHunt:1b,HandItems:[{id:"minecraft:golden_sword",Count:1b},{}],PersistenceRequired:1b,Tags:["KillAtEnd"]}
+execute if entity @s[tag=!Ranged,tag=!Small] as @e[tag=piglin,tag=SpawnMe] run summon piglin ~ ~ ~ {IsImmuneToZombification:1b,CannotHunt:1b,HandItems:[{id:"minecraft:golden_sword",Count:1b},{}],PersistenceRequired:1b,Tags:["KillAtEnd"]}
+execute as @e[tag=piglin_brute,tag=SpawnMe] run summon piglin_brute ~ ~ ~ {IsImmuneToZombification:1b,CannotHunt:1b,HandItems:[{id:"minecraft:golden_axe",Count:1b},{}],PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute as @e[tag=rabbit,tag=SpawnMe] run summon rabbit ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"],RabbitType:99}
 execute as @e[tag=ravager,tag=SpawnMe] run summon ravager ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute as @e[tag=silverfish,tag=SpawnMe] run summon silverfish ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
