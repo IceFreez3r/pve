@@ -15,4 +15,6 @@ execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNa
 #Reset advancements
 advancement revoke @a from pve:root
 
+time set 12000
+
 function pve:enemies/start
