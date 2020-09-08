@@ -1,3 +1,6 @@
+tellraw @a [{"text":"The difficulty starts at "},{"text":"0","color":"dark_purple"},{"text":" and will increase every 5 minutes."}]
+scoreboard players set Difficulty State 0
+
 summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomEnemy","KillAtEnd","enderman"]}
 summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomEnemy","KillAtEnd","Small","slime"]}
 summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomEnemy","KillAtEnd","spider"]}
