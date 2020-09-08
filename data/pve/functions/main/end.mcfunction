@@ -14,3 +14,5 @@ kill @e[tag=KillAtEnd]
 #Destroy Lootboxes and their content
 execute at @e[tag=Loot] run setblock ~ ~ ~ air replace
 kill @e[type=item]
+
+time set day
