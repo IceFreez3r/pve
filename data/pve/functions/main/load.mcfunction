@@ -12,6 +12,7 @@ scoreboard objectives add Score dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
 
+#Non-default Gamerules
 gamerule doDaylightCycle false
 gamerule doEntityDrops false
 gamerule doFireTick false
