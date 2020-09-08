@@ -12,7 +12,18 @@ scoreboard objectives add Score dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
 
+gamerule doDaylightCycle false
+gamerule doEntityDrops false
+gamerule doFireTick false
+gamerule doImmediateRespawn true
+gamerule doMobLoot false
+gamerule doMobSpawning false
+gamerule doTileDrops false
+gamerule doTraderSpawning false
+gamerule doWeatherCycle false
 gamerule forgiveDeadPlayers false
+gamerule mobGriefing false
+gamerule randomTickSpeed 0
 gamerule universalAnger true
 
 execute if entity @e[type=armor_stand,tag=!Important] run say Warning! There is at least one Armorstand without the tag "Important". Make sure that this is intended.
