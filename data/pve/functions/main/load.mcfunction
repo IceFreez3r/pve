@@ -7,6 +7,8 @@ scoreboard objectives add Time dummy
 #Enemy: 0..99 Loading, 100.. Spawning
 #Difficulty 0-5 different difficulties
 scoreboard objectives add State dummy
+#Scores
+scoreboard objectives add Score dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
 
