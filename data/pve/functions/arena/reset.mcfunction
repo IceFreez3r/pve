@@ -2,12 +2,17 @@
 # or in State Waiting and at Time 0 if conditions weren't fulfilled
 
 #Close the gate
-fill -343 32 -53 -343 34 -51 minecraft:nether_brick_fence[north=true,south=true]
+execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^-1 ^ ^
+execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^-1 ^1 ^
+execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^ ^ ^
+execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^ ^1 ^
+execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^1 ^ ^
+execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^1 ^1 ^
 #Destroy Lootboxes
 execute at @e[tag=ArenaDrop] run setblock ~ ~ ~ air
 #Kick out players, who are too stupid to move out on their own
 tellraw @a[distance=..13] [{"text":"Too stupid to leave on your own?"}]
-tp @a[distance=..13] -342 32 -52
+execute as @a[distance=..13] at @s at @e[tag=Arenaentrance,sort=nearest,limit=1] positioned ^ ^ ^1 run tp @s ~ ~ ~
 #Set State to Ready
 scoreboard players set Arena State 0
 #Reset Time

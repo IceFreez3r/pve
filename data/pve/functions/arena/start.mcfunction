@@ -1,7 +1,7 @@
 #Function run by one player with arenaticket at the entrance of the arena
 
 #Open the gate
-fill -343 32 -53 -343 34 -51 minecraft:air
+execute as @e[tag=Arenaentrance] at @s run fill ^1 ^ ^ ^-1 ^1 ^ air
 #Tell everyone to help
 tellraw @a [{"selector":"@s","color":"dark_purple"},{"text":" has used an arenaticket.\n","color":"white"},{"text":"If you want to join the fight, enter the arena in the next ","color":"white"},{"text":"30","color":"dark_purple"},{"text":" seconds.","color":"white"}]
 #Set State to Waiting

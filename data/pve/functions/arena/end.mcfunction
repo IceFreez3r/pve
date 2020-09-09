@@ -1,7 +1,7 @@
 #Function run by "Arenaleader" in State Fight and at Time 0
 
 #Open the gate
-fill -343 32 -53 -343 34 -51 minecraft:air
+execute as @e[tag=Arenaentrance] at @s run fill ^1 ^ ^ ^-1 ^1 ^ air
 #Loot
 execute at @e[tag=ArenaDrop] run summon minecraft:falling_block ~ ~50 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"pve:arena_loot"},Glowing:1b,Time:1}
 #Set State to Cooldown
