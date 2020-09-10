@@ -6,7 +6,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "pve:arrow"
+                    "name": "pve:equipment/arrow"
                 },
                 {
                     "type": "item",
@@ -44,22 +44,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "minecraft:trident",
-                    "functions": [
-                        {
-                            "function": "enchant_randomly",
-                            "conditions": [
-                                {
-                                    "condition": "random_chance",
-                                    "chance": 0.1
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:shield",
                     "functions": [
                         {
                             "function": "enchant_randomly",

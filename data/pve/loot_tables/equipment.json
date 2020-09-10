@@ -7,6 +7,11 @@
                     "type": "loot_table",
                     "weight": 1,
                     "name": "pve:equipment/weapons"
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "pve:equipment/armor"
                 }
             ]
         }
