@@ -12,6 +12,7 @@ scoreboard players reset @e Time
 #Remove temporary armorstands and enemies
 #TODO: Kill smaller slimes aswell
 kill @e[tag=KillAtEnd]
+kill @e[type=vex]
 
 #Destroy Lootboxes and their content
 execute at @e[tag=Loot] run setblock ~ ~ ~ air replace
