@@ -8,20 +8,6 @@
             "entries": [
                 {
                     "type": "item",
-                    "weight": 37,
-                    "name": "minecraft:cookie",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 6,
-                                "max": 10
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
                     "weight": 9,
                     "name": "minecraft:pumpkin_pie",
                     "functions": [
