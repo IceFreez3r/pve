@@ -6,7 +6,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "pve:equipment/arrow"
+                    "name": "pve:equipment/projectiles"
                 },
                 {
                     "type": "item",
@@ -55,6 +55,11 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:fishing_rod"
                 },
                 {
                     "type": "item",
