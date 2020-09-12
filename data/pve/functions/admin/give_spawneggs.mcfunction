@@ -10,3 +10,4 @@ give @s minecraft:bat_spawn_egg{display:{Name:'{"text":"Arena"}'},EntityTag:{id:
 give @s minecraft:bat_spawn_egg{display:{Name:'{"text":"Arenaentrance"}',Lore:['{"text":"Facing is important! Use:"}','{"text":"/execute as @e[tag=Arenaentrance] at @s "}','{"text":"run tp @s ~ ~ ~ [direction] 0"}']},EntityTag:{id:"minecraft:armor_stand",CustomNameVisible:1b,Tags:["Arenaentrance","Important"],CustomName:'{"text":"Arenaentrance"}'}} 1
 
 give @s minecraft:bat_spawn_egg{display:{Name:'{"text":"Labyrinth"}'},EntityTag:{id:"minecraft:armor_stand",CustomNameVisible:1b,Tags:["Labyrinth","Important"],CustomName:'{"text":"Labyrinth"}'}} 1
+give @s minecraft:bat_spawn_egg{display:{Name:'{"text":"Passive"}'},EntityTag:{id:"minecraft:armor_stand",CustomNameVisible:1b,Tags:["Passive","Important"],CustomName:'{"text":"Passive"}'}} 1
