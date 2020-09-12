@@ -1,0 +1,9 @@
+#Collection of commands that will be probably useful later, but aren't used yet.
+#There is no sense in calling this function.
+#Arenaticket
+give @p minecraft:paper{display:{Name:'{"text":"Arenaticket","color":"dark_red","bold":true}',Lore:['{"text":"Get ready for the fight!","color":"gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:mending",lvl:1s}]} 1
+
+execute as @e[type=minecraft:armor_stand,distance=..3] run loot replace entity @s armor.head loot minecraft:chests/bastion_treasure
+execute as @e[type=minecraft:armor_stand,distance=..3] if data entity @s {ArmorItems:[{id:"minecraft:ancient_debris"}]}
+data merge entity @e[type=minecraft:armor_stand,distance=..3,limit=1] {ArmorItems:[{},{},{},{}]}
+#Armorstands need to be silenced, else "Armor equip plays"
