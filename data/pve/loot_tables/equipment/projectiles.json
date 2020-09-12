@@ -250,7 +250,7 @@
                 {
                     "type": "item",
                     "weight": 1,
-                    "name": "minecraft:enderpearl",
+                    "name": "minecraft:ender_pearl",
                     "functions": [
                         {
                             "function": "set_count",
