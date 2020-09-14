@@ -7,3 +7,6 @@ execute as @e[type=minecraft:armor_stand,distance=..3] run loot replace entity @
 execute as @e[type=minecraft:armor_stand,distance=..3] if data entity @s {ArmorItems:[{id:"minecraft:ancient_debris"}]}
 data merge entity @e[type=minecraft:armor_stand,distance=..3,limit=1] {ArmorItems:[{},{},{},{}]}
 #Armorstands need to be silenced, else "Armor equip plays"
+
+#Friendly Irongolem
+give @p polar_bear_spawn_egg{CanPlaceOn:["minecraft:nether_bricks"],display:{Name:'{"text":"Iron Golem Spawn Egg"}'},HideFlags:16,EntityTag:{id:"minecraft:iron_golem",PlayerCreated:1b,Tags:["KillAtEnd"],CustomName:''}} 1
