@@ -23,11 +23,7 @@
                 "items": [
                     {
                         "item": "minecraft:paper",
-                        "nbt": "{display:{Name:'{\"text\":\"Arenaticket\",\"color\":\"dark_red\",\"bold\":true}',Lore:['{\"text\":\"Get ready for the fight!\",\"color\":\"gray\"}']},HideFlags:1,Enchantments:[{id:\"minecraft:mending\",lvl:1s}]}",
-                        "count": {
-                            "min": 1,
-                            "max": 64
-                        }
+                        "nbt": "{display:{Name:'{\"text\":\"Arenaticket\",\"color\":\"dark_red\",\"bold\":true}',Lore:['{\"text\":\"Get ready for the fight!\",\"color\":\"gray\"}']},HideFlags:1,Enchantments:[{id:\"minecraft:mending\",lvl:1s}]}"
                     }
                 ]
             }

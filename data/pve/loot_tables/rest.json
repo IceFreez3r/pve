@@ -39,6 +39,17 @@
                             "tag": "{display:{Name:'{\"text\":\"Extralife\",\"color\":\"green\"}'},Extralife:1}"
                         }
                     ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Arenaticket\",\"color\":\"dark_red\",\"bold\":true}',Lore:['{\"text\":\"Get ready for the fight!\",\"color\":\"gray\"}']},HideFlags:1,Enchantments:[{id:\"minecraft:mending\",lvl:1s}]}"
+                        }
+                    ]
                 }
             ]
         }

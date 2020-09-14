@@ -14,4 +14,4 @@ bossbar set minecraft:arena visible false
 advancement grant @a[distance=..13] only pve:arena_completed
 
 #Tell everyone in the arena that it is now in its cooldown phase
-tellraw @a[distance=..13] [{"text":"Congratulations!","color":"dark_purple"},{"text":" You made it. Take your rewards in the middle.","color":"reset"},{"text":"\nThe arena needs some cleanup and will be back in ","color":"reset"},{"text":"5","color":"dark_purple"},{"text":" minutes.","color":"reset"}]
+tellraw @a[distance=..13] [{"text":"Congratulations!","color":"dark_red"},{"text":" You made it. Take your rewards in the middle.","color":"reset"},{"text":"\nThe arena needs some cleanup and will be back in ","color":"reset"},{"text":"5","color":"dark_red"},{"text":" minutes.","color":"reset"}]

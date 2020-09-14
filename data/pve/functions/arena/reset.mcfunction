@@ -20,4 +20,4 @@ scoreboard players set Arena Time 0
 bossbar set minecraft:arena visible false
 
 #Tell everyone that the arena is ready again
-tellraw @a [{"text":"The "},{"text":"arena","color":"dark_purple"},{"text":" is ready for the next round again. Do you already have a "},{"text":"ticket","color":"dark_purple"},{"text":"?"}]
+tellraw @a [{"text":"The "},{"text":"arena","color":"dark_red"},{"text":" is ready for the next round again. Do you already have a "},{"text":"ticket","color":"dark_red"},{"text":"?"}]
