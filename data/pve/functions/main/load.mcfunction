@@ -9,6 +9,8 @@ scoreboard objectives add Time dummy
 scoreboard objectives add State dummy
 #Scores
 scoreboard objectives add Score dummy
+#Playerlifes
+scoreboard objectives add Lifes dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
 

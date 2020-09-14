@@ -5,6 +5,7 @@ execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNa
 scoreboard players set Game State 0
 
 #Reset all scoreboards
+scoreboard players reset @e Lifes
 scoreboard players reset @e Score
 scoreboard players reset @e State
 scoreboard players reset @e Time
