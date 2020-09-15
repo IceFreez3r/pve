@@ -22,8 +22,8 @@ scoreboard players remove @a[tag=died] Lifes 1
 scoreboard players remove @a[tag=died] Deaths 1
 tellraw @a[tag=died,scores={Lifes=0..}] [{"text":"You died.\nYou have "},{"score":{"name":"*","objective":"life(s)"}},{"text":" lifes left."}]
 gamemode spectator @a[tag=died,scores={Lifes=..-1}]
-scoreboard players reset @a[tag=died,scores={Lifes=..-1}] Lifes
 tellraw @a[tag=died,scores={Lifes=..-1}] {"text":"You died without any life left.\nYou were put into spectator."}
+scoreboard players reset @a[tag=died,scores={Lifes=..-1}] Lifes
 tag @a[tag=died] remove died
 
 #Give spectators and creative players night_vision if they are holding a glowstone_dust in their main- or offhand
