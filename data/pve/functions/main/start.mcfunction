@@ -10,6 +10,7 @@ advancement revoke @a from pve:root
 
 #Call the other start-functions
 function pve:main/reset_blockstates
+function pve:arena/start
 function pve:enemies/start
 function pve:loot/start
 function pve:main/difficulty/0

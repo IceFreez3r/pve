@@ -1,15 +1,25 @@
-#Function run by one player with arenaticket at the entrance of the arena
-
-#Open the gate
-execute as @e[tag=Arenaentrance] at @s run fill ^1 ^ ^ ^-1 ^1 ^ air
-#Tell everyone to help
-tellraw @a [{"selector":"@s","color":"dark_red"},{"text":" want's to use an ","color":"white"},{"text": "arenaticket","color":"dark_red"},{"text":".\n","color":"white"},{"text":"If you want to join the fight, enter the arena in the next ","color":"white"},{"text":"30","color":"dark_red"},{"text":" seconds.","color":"white"}]
-#Set State to Waiting
-scoreboard players set Arena State 1
-#Schedule the start in 30 seconds
-scoreboard players set Arena Time 600
-bossbar set minecraft:arena name {"text":"Time until Start","color":"dark_red"}
-bossbar set minecraft:arena max 600
-bossbar set minecraft:arena players @a
-bossbar set minecraft:arena visible true
-bossbar set minecraft:arena color pink
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","cave_spider"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","creeper"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","drowned"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","baby_drowned"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","ranged_drowned"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","evoker"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","baby_hoglin"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","husk"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","baby_husk"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","piglin"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","ranged_piglin"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","piglin_brute"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","pillager"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","skeleton"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","stray"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","vindicator"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","witch"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","wither_skeleton"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","wolf"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","zombie"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","baby_zombie"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","zombie_villager"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","baby_zombie_villager"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","zombiefied_piglin"]}
+summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomArenaEnemy","KillAtEnd","baby_zombiefied_piglin"]}
