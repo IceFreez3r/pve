@@ -13,10 +13,12 @@ execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^1 ^1 ^
 scoreboard players set Arena State 2
 #Set timer on 2 minutes
 scoreboard players set Arena Time 2400
+#Bossbar configuration
 bossbar set minecraft:arena name {"text":"Time remaining","color":"dark_red"}
 bossbar set minecraft:arena max 2400
-bossbar set minecraft:arena players @a[distance=..13]
+function pve:arena/distance
+bossbar set minecraft:arena players @a[scores={InArena=1}]
 bossbar set minecraft:arena color red
 
 #Tell everyone in the arena that the fight started
-tellraw @a[distance=..13] [{"text":"The fight begins!"},{"text":" Try to survive!","color":"dark_red"}]
+tellraw @a[scores={InArena=1}] [{"text":"The fight begins!"},{"text":" Try to survive!","color":"dark_red"}]

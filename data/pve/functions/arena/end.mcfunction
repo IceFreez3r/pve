@@ -11,7 +11,8 @@ scoreboard players set Arena Time 6000
 bossbar set minecraft:arena visible false
 
 #give survivors the advancement
-advancement grant @a[distance=..13] only pve:arena_completed
+function pve:arena/distance
+advancement grant @a[scores={InArena=1}] only pve:arena_completed
 
 #Tell everyone in the arena that it is now in its cooldown phase
-tellraw @a[distance=..13] [{"text":"Congratulations!","color":"dark_red"},{"text":" You made it. Take your rewards in the middle.","color":"reset"},{"text":"\nThe arena needs some cleanup and will be back in ","color":"reset"},{"text":"5","color":"dark_red"},{"text":" minutes.","color":"reset"}]
+tellraw @a[scores={InArena=1}] [{"text":"Congratulations!","color":"dark_red"},{"text":" You made it. Take your rewards in the middle.","color":"reset"},{"text":"\nThe arena needs some cleanup and will be back in ","color":"reset"},{"text":"5","color":"dark_red"},{"text":" minutes.","color":"reset"}]

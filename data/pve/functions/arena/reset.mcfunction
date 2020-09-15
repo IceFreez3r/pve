@@ -11,8 +11,9 @@ execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^1 ^1 ^
 #Destroy Lootboxes
 execute at @e[tag=ArenaDrop] run setblock ~ ~ ~ air
 #Kick out players, who are too stupid to move out on their own
-tellraw @a[distance=..13] [{"text":"Too stupid to leave on your own?"}]
-execute as @a[distance=..13] at @s at @e[tag=Arenaentrance,sort=nearest,limit=1] positioned ^ ^ ^1 run tp @s ~ ~ ~
+function pve:arena/distance
+tellraw @a[scores={InArena=1}] [{"text":"Too stupid to leave on your own?"}]
+execute as @a[scores={InArena=1}] at @s at @e[tag=Arenaentrance,sort=nearest,limit=1] positioned ^ ^ ^1 run tp @s ~ ~ ~
 #Set State to Ready
 scoreboard players set Arena State 0
 #Reset Time
