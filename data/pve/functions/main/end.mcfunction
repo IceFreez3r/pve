@@ -1,3 +1,6 @@
+scoreboard players operation Game Time /= #20 constant
+tellraw @a [{"text":"The game is over.\nYou survived for "},{"score":{"name":"Game","objective":"Time"},"color":"dark_purple"},{"text":" seconds."}]
+
 #Make Armorstands visible
 execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNameVisible:1b,Invisible:0b}
 
@@ -6,12 +9,13 @@ scoreboard players set Game State 0
 
 #Reset all scoreboards
 scoreboard players reset @e Lifes
+scoreboard players reset @e Deaths
 scoreboard players reset @e Score
 scoreboard players reset @e State
 scoreboard players reset @e Time
 
 #Remove temporary armorstands and enemies
-#TODO: Kill smaller slimes aswell
+#TODO: Kill smaller slimes/magma cubes aswell
 kill @e[tag=KillAtEnd]
 kill @e[type=vex]
 

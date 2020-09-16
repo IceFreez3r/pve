@@ -16,15 +16,7 @@ execute if score Game Time matches 18000.. if score Difficulty State matches ..2
 execute if score Game Time matches 24000.. if score Difficulty State matches ..3 run function pve:main/difficulty/4
 execute if score Game Time matches 30000.. if score Difficulty State matches ..4 run function pve:main/difficulty/5
 
-#Remove Lifes
-tag @a[scores={Deaths=1..}] add died
-scoreboard players remove @a[tag=died] Lifes 1
-scoreboard players remove @a[tag=died] Deaths 1
-tellraw @a[tag=died,scores={Lifes=0..}] [{"text":"You died.\nYou have "},{"score":{"name":"*","objective":"life(s)"}},{"text":" lifes left."}]
-gamemode spectator @a[tag=died,scores={Lifes=..-1}]
-tellraw @a[tag=died,scores={Lifes=..-1}] {"text":"You died without any life left.\nYou were put into spectator."}
-scoreboard players reset @a[tag=died,scores={Lifes=..-1}] Lifes
-tag @a[tag=died] remove died
+execute as @a[scores={Deaths=1..}] run function pve:main/die
 
 #Give spectators and creative players night_vision if they are holding a glowstone_dust in their main- or offhand
 execute as @a[gamemode=!adventure] if entity @s[nbt={SelectedItem:{id:"minecraft:glowstone_dust"}}] run effect give @s minecraft:night_vision 30 0 true

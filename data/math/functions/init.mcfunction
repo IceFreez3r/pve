@@ -19,6 +19,7 @@ scoreboard players set #1000 constant 1000
 scoreboard players set #255 constant 255
 scoreboard players set #100 constant 100
 scoreboard players set #70 constant 70
+scoreboard players set #20 constant 20
 scoreboard players set #15 constant 15
 scoreboard players set #12 constant 12
 scoreboard players set #10 constant 10
