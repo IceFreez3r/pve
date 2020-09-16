@@ -36,4 +36,5 @@ execute if entity @e[type=armor_stand,tag=!Important] run say Warning! There is 
 execute if entity @e[type=item_frame,tag=!Important] run say Warning! There is at least one Itemframe without the tag "Important". Make sure that this is intended.
 
 advancement revoke @a[gamemode=!adventure] from pve:root
-say Reload done!
+
+tellraw @a[gamemode=creative] {"text":"Reload of namespace \"pve\" from the datapack \"PvE\" done!"}

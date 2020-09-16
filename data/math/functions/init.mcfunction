@@ -29,3 +29,5 @@ scoreboard players set #2 constant 2
 scoreboard players set #1 constant 1
 scoreboard players set #0 constant 0
 scoreboard players set #-1 constant -1
+
+tellraw @a[gamemode=creative] {"text":"Reload of namespace \"math\" from the datapack \"PvE\" done!"}
