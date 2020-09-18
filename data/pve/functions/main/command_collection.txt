@@ -10,3 +10,9 @@ data merge entity @e[type=minecraft:armor_stand,distance=..3,limit=1] {ArmorItem
 
 #Friendly Irongolem
 give @p polar_bear_spawn_egg{CanPlaceOn:["minecraft:nether_bricks"],display:{Name:'{"text":"Iron Golem Spawn Egg"}'},HideFlags:16,EntityTag:{id:"minecraft:iron_golem",PlayerCreated:1b,Tags:["KillAtEnd"],CustomName:''}} 1
+
+#Teams
+team modify Team2 color blue
+team modify Team1 deathMessageVisibility hideForOtherTeams
+/team modify Team2 displayName {"text":"BLUE","color":"blue"}
+/team modify Team1 prefix {"text":"[RED] ","color":"red"}

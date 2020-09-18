@@ -14,6 +14,10 @@ scoreboard objectives add Score dummy
 scoreboard objectives add Lifes dummy
 #Indicates if players are close to the Arenaleader
 scoreboard objectives add InArena dummy
+#Rules
+#Teams: false/true
+#Startlifes: 0..
+scoreboard objectives add Rules dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
 
