@@ -4,23 +4,27 @@
             "rolls": 1,
             "entries": [
                 {
+                    "type": "empty",
+                    "weight": 170
+                },
+                {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 4,
                     "name": "minecraft:totem_of_undying"
                 },
                 {
                     "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:warped_fungus_on_a_stick"
+                    "weight": 5,
+                    "name": "minecraft:warped_fungus"
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 5,
                     "name": "minecraft:saddle"
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 4,
                     "name": "minecraft:polar_bear_spawn_egg",
                     "functions": [
                         {
@@ -31,7 +35,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 2,
                     "name": "minecraft:glowstone",
                     "functions": [
                         {
@@ -42,7 +46,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 4,
                     "name": "minecraft:paper",
                     "functions": [
                         {

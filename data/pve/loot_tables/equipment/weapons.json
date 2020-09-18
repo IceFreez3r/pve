@@ -5,12 +5,12 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "weight": 1,
+                    "weight": 17,
                     "name": "pve:equipment/projectiles"
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 8,
                     "name": "minecraft:bow",
                     "functions": [
                         {
@@ -26,7 +26,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 6,
                     "name": "minecraft:crossbow",
                     "functions": [
                         {
@@ -42,7 +42,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 0,
                     "name": "minecraft:trident",
                     "functions": [
                         {
@@ -58,12 +58,12 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 4,
                     "name": "minecraft:fishing_rod"
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 48,
                     "name": "minecraft:wooden_sword",
                     "functions": [
                         {
@@ -79,7 +79,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 32,
                     "name": "minecraft:stone_sword",
                     "functions": [
                         {
@@ -95,7 +95,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 16,
                     "name": "minecraft:golden_sword",
                     "functions": [
                         {
@@ -111,7 +111,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 8,
                     "name": "minecraft:iron_sword",
                     "functions": [
                         {
@@ -127,7 +127,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 4,
                     "name": "minecraft:diamond_sword",
                     "functions": [
                         {
@@ -143,7 +143,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 2,
                     "name": "minecraft:netherite_sword",
                     "functions": [
                         {
@@ -159,7 +159,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 24,
                     "name": "minecraft:wooden_axe",
                     "functions": [
                         {
@@ -175,7 +175,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 16,
                     "name": "minecraft:stone_axe",
                     "functions": [
                         {
@@ -191,7 +191,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 8,
                     "name": "minecraft:golden_axe",
                     "functions": [
                         {
@@ -207,7 +207,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 4,
                     "name": "minecraft:iron_axe",
                     "functions": [
                         {
@@ -223,7 +223,7 @@
                 },
                 {
                     "type": "item",
-                    "weight": 1,
+                    "weight": 2,
                     "name": "minecraft:diamond_axe",
                     "functions": [
                         {
