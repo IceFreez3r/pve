@@ -14,3 +14,13 @@ execute if entity @s[tag=Ready] run tag @s remove Ready
 #Ready Part 2
 tag @s[tag=Ready_temp] add Ready
 tag @s[tag=Ready_temp] remove Ready_temp
+
+#Compute Distance for every player to the Arenaleader
+execute at @e[type=armor_stand,tag=Lobby,limit=1] as @a run function math:fast/e_dst
+execute as @a store success score @s InLobby run execute if score @s math_out <= Lobbysize Rules
+execute store result score InLobby InLobby run execute if entity @a[gamemode=adventure,scores={InLobby=1}]
+execute store result score Ready InLobby run execute if entity @a[gamemode=adventure,scores={InLobby=1},tag=Ready]
+execute unless score Ready InLobby matches 0 if score Ready InLobby = InLobby InLobby run function pve:main/start
+execute unless score Game State matches 1 run scoreboard players operation Ready InLobby *= #5 constant
+execute unless score Game State matches 1 run scoreboard players operation InLobby InLobby *= #4 constant
+execute unless score Game State matches 1 if score InLobby InLobby < Ready InLobby run tellraw @a[tag=Operator] [{"text":"More than 80% of the players in the lobby are ready. \n"},{"text":"Start the game?","hoverEvent":{"action":"show_text","contents":[{"text":"Click to Start","italic":true}]},"clickEvent":{"action":"run_command","value":"/function pve:main/start"}}]

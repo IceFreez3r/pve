@@ -14,6 +14,8 @@ scoreboard objectives add Score dummy
 scoreboard objectives add Lifes dummy
 #Indicates if players are close to the Arenaleader
 scoreboard objectives add InArena dummy
+#Indicates if players are in the Lobby
+scoreboard objectives add InLobby dummy
 #Rules
 #Teams: false/true
 #Startlifes: 0..
