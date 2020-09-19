@@ -8,7 +8,7 @@ scoreboard objectives add Time dummy
 #Difficulty 0-5 different difficulties
 scoreboard objectives add State dummy
 #Scores
-#Arenasize in cm, MinimalDropState
+#MinimalDropState
 scoreboard objectives add Score dummy
 #Playerlifes
 scoreboard objectives add Lifes dummy
@@ -19,6 +19,8 @@ scoreboard objectives add InLobby dummy
 #Rules
 #Teams: false/true
 #Startlifes: 0..
+#Lobbysize
+#Arenasize
 scoreboard objectives add Rules dummy
 #Arenabossbar for Times
 bossbar add arena "Time"
