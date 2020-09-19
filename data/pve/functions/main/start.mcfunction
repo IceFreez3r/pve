@@ -3,7 +3,8 @@ scoreboard players set Game State 1
 scoreboard players set Game Time 0
 
 #Set Playerlifes
-scoreboard players set @a[gamemode=adventure] Lifes 3
+scoreboard players set @a[gamemode=adventure] Lifes 0
+scoreboard players operation @a[gamemode=adventure] Lifes = Startlifes Rules
 
 #Heal and feed players to the maximum
 effect give IceFreez3r minecraft:saturation 1 255
