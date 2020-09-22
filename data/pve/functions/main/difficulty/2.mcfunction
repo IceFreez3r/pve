@@ -9,4 +9,4 @@ summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","Ra
 summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomEnemy","KillAtEnd","Ranged","illusioner"]}
 summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomEnemy","KillAtEnd","Ranged","pillager"]}
 
-time set 12800
+time set 13125

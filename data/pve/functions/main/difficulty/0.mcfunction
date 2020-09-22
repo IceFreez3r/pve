@@ -14,4 +14,4 @@ summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","Ra
 
 summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["Important","RandomPassive","KillAtEnd","strider"]}
 
-time set 12000
+time set 12542
