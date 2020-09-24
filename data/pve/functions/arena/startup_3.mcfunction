@@ -1,4 +1,4 @@
-#Function run by "Arenaleader" in State Waiting and at Time 0
+#Function run by "Arenacenter" in State Waiting and at Time 0
 
 tellraw @p[nbt={Inventory:[{id: "minecraft:paper", tag: {HideFlags: 1, display: {Lore: ['{"text":"Get ready for the fight!","color":"gray"}'], Name: '{"text":"Arenaticket","color":"dark_red","bold":true}'}, Enchantments: [{lvl: 1s, id: "minecraft:mending"}]}}]}] [{"text":"Your "},{"text":"ticket","color":"dark_red"},{"text":" has been used."}]
 clear @p[nbt={Inventory:[{id: "minecraft:paper", tag: {HideFlags: 1, display: {Lore: ['{"text":"Get ready for the fight!","color":"gray"}'], Name: '{"text":"Arenaticket","color":"dark_red","bold":true}'}, Enchantments: [{lvl: 1s, id: "minecraft:mending"}]}}]}] minecraft:paper{display:{Name:'{"text":"Arenaticket","color":"dark_red","bold":true}',Lore:['{"text":"Get ready for the fight!","color":"gray"}']},HideFlags:1,Enchantments:[{id:"minecraft:mending",lvl:1s}]} 1

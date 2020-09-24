@@ -1,9 +1,9 @@
-#Function run by "Arenaleader" in State Fight and at Time 0
+#Function run by "Arenacenter" in State Fight and at Time 0
 
 #Open the gate
 execute as @e[tag=Arenaentrance] at @s run fill ^1 ^ ^ ^-1 ^1 ^ air
 #Loot
-execute at @e[tag=ArenaDrop] run summon minecraft:falling_block ~ ~50 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"pve:arena_loot"},Glowing:1b,Time:1}
+execute at @e[tag=Arenadrop] run summon minecraft:falling_block ~ ~50 ~ {BlockState:{Name:"minecraft:barrel",Properties:{facing:"up"}},TileEntityData:{LootTable:"pve:arena_loot"},Glowing:1b,Time:1}
 #Set State to Cooldown
 scoreboard players set Arena State 3
 #Schedule the Reset in 5 minutes

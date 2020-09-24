@@ -16,9 +16,6 @@ execute if score Teams Rules matches 1 at @e[type=armor_stand,tag=Spawn1,limit=1
 execute if score Teams Rules matches 1 at @e[type=armor_stand,tag=Spawn2,limit=1] run tp @a[team=Team2] ~ ~ ~
 execute if score Teams Rules matches 1 at @e[type=armor_stand,tag=Spawn2,limit=1] run spawnpoint @a[team=Team2] ~ ~ ~
 
-#Make Armorstands invisible
-execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNameVisible:0b,Invisible:1b}
-
 tag @a[tag=Ready] remove Ready
 
 #Call the other start-functions

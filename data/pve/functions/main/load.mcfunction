@@ -12,7 +12,7 @@ scoreboard objectives add State dummy
 scoreboard objectives add Score dummy
 #Playerlifes
 scoreboard objectives add Lifes dummy
-#Indicates if players are close to the Arenaleader
+#Indicates if players are close to the Arenacenter
 scoreboard objectives add InArena dummy
 #Indicates if players are in the Lobby
 scoreboard objectives add InLobby dummy

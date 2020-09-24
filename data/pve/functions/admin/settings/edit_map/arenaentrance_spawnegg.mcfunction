@@ -1,0 +1,1 @@
+give @s minecraft:bat_spawn_egg{display:{Name:'{"text":"Arenaentrance"}',Lore:['{"text":"Facing is important! Use:"}','{"text":"/execute as @e[tag=Arenaentrance] at @s "}','{"text":"run tp @s ~ ~ ~ [direction] 0"}']},EntityTag:{id:"minecraft:armor_stand",CustomNameVisible:1b,Tags:["Arenaentrance","Important"],CustomName:'{"text":"Arenaentrance"}'}} 1

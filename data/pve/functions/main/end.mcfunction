@@ -3,9 +3,6 @@ tellraw @a [{"text":"The game is over.\nYou survived for "},{"score":{"name":"Ga
 
 tp @a @e[type=armor_stand,tag=Lobby,limit=1]
 
-#Make Armorstands visible
-execute as @e[type=armor_stand,tag=Important] run data merge entity @s {CustomNameVisible:1b,Invisible:0b}
-
 #Set the Game State to Paused
 scoreboard players set Game State 0
 

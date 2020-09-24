@@ -15,7 +15,7 @@ execute if entity @s[tag=Ready] run tag @s remove Ready
 tag @s[tag=Ready_temp] add Ready
 tag @s[tag=Ready_temp] remove Ready_temp
 
-#Compute Distance for every player to the Arenaleader
+#Compute Distance for every player to the Arenacenter
 execute at @e[type=armor_stand,tag=Lobby,limit=1] as @a run function math:fast/e_dst
 execute as @a store success score @s InLobby run execute if score @s math_out <= Lobbysize Rules
 execute store result score InLobby InLobby run execute if entity @a[gamemode=adventure,scores={InLobby=1}]

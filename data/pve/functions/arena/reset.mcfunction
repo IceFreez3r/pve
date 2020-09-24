@@ -1,4 +1,4 @@
-#Function run by "Arenaleader" in State Cooldown and at Time 0
+#Function run by "Arenacenter" in State Cooldown and at Time 0
 # or in State Waiting and at Time 0 if conditions weren't fulfilled
 
 #Close the gate
@@ -9,7 +9,7 @@ execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^ ^1 ^
 execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^1 ^ ^
 execute as @e[tag=Arenaentrance] at @s run clone ~ ~2 ~ ~ ~2 ~ ^1 ^1 ^
 #Destroy Lootboxes
-execute at @e[tag=ArenaDrop] run setblock ~ ~ ~ air
+execute at @e[tag=Arenadrop] run setblock ~ ~ ~ air
 #Kick out players, who are too stupid to move out on their own
 function pve:arena/distance
 tellraw @a[scores={InArena=1}] [{"text":"Too stupid to leave on your own?"}]

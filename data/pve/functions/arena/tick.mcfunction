@@ -1,4 +1,4 @@
-#Function run by "Arenaleader"
+#Function run by "Arenacenter"
 
 #Reduce Timer by 1 and store result in bossbar
 execute unless score Arena Time matches ..0 run scoreboard players remove Arena Time 1
