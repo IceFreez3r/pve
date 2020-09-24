@@ -1,6 +1,27 @@
 {
   "pack": {
-    "pack_format": 5,
-    "description": "Try to survive!"
+    "pack_format": 6,
+    "description": [
+      {
+        "text":"A datapack by "
+      },
+      {
+        "text":"IceFreez3r",
+        "color":"aqua",
+        "bold":true
+      },
+      {
+        "text":" and "
+      },
+      {
+        "text":"Ampholyt",
+        "color":"red",
+        "bold":true
+      },
+      {
+        "text":"\nBuild your own Arena!",
+        "bold":true
+      }
+    ]
   }
 }
