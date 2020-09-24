@@ -1,0 +1,9 @@
+Available structures in my world:
+(They aren't included in the datapack itself)
+
+tnt_corridor
+flying_machine
+lava_bridge
+ghast_station
+ship
+ship_2
