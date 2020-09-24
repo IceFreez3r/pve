@@ -1,5 +1,6 @@
 execute as @e[type=armor_stand,tag=cave_spider,tag=SpawnMe] run summon cave_spider ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
-execute as @e[type=armor_stand,tag=creeper,tag=SpawnMe] run summon creeper ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
+execute if score Difficulty State matches ..4 as @e[type=armor_stand,tag=creeper,tag=SpawnMe] run summon creeper ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
+execute if score Difficulty State matches 5.. as @e[type=armor_stand,tag=creeper,tag=SpawnMe] run summon creeper ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"],powered:1b}
 execute if entity @s[tag=Small] as @e[type=armor_stand,tag=drowned,tag=SpawnMe] run summon drowned ~ ~ ~ {IsBaby:1b,PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute if entity @s[tag=!Ranged,tag=!Small] as @e[type=armor_stand,tag=drowned,tag=SpawnMe] run summon drowned ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute as @e[type=armor_stand,tag=enderman,tag=SpawnMe] run summon enderman ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"],AngerTime:5000}
