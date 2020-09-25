@@ -16,7 +16,12 @@ execute if score Game Time matches 18000.. if score Difficulty State matches ..2
 execute if score Game Time matches 24000.. if score Difficulty State matches ..3 run function pve:main/difficulty/4
 execute if score Game Time matches 30000.. if score Difficulty State matches ..4 run function pve:main/difficulty/5
 
+#Reduce Lifecounte of players who died
 execute as @a[scores={Deaths=1..}] run function pve:main/die
+
+#Kill smaller slimes and magma_cubes
+execute if score Game State matches 0 run kill @e[type=slime]
+execute if score Game State matches 0 run kill @e[type=magma_cube]
 
 #Give spectators and creative players night_vision if they are holding a glowstone_dust in their main- or offhand
 execute as @a[gamemode=!adventure] if entity @s[nbt={SelectedItem:{id:"minecraft:glowstone_dust"}}] run effect give @s minecraft:night_vision 30 0 true
