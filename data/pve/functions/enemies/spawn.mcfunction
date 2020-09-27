@@ -5,7 +5,7 @@ execute if entity @s[tag=Small] as @e[type=armor_stand,tag=drowned,tag=SpawnMe] 
 execute if entity @s[tag=!Ranged,tag=!Small] as @e[type=armor_stand,tag=drowned,tag=SpawnMe] run summon drowned ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute as @e[type=armor_stand,tag=enderman,tag=SpawnMe] run summon enderman ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"],AngerTime:5000}
 execute as @e[type=armor_stand,tag=endermite,tag=SpawnMe] run summon endermite ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
-execute if entity @s[tag=Small] as @e[type=armor_stand,tag=hoglin,tag=SpawnMe] run summon hoglin ~ ~ ~ {Age:-1000,AgeLocked:1b,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["KillAtEnd"]}
+execute if entity @s[tag=Small] as @e[type=armor_stand,tag=hoglin,tag=SpawnMe] run summon hoglin ~ ~ ~ {Age:-1000000,IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute if entity @s[tag=!Small] as @e[type=armor_stand,tag=hoglin,tag=SpawnMe] run summon hoglin ~ ~ ~ {IsImmuneToZombification:1b,PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute if entity @s[tag=Small] as @e[type=armor_stand,tag=husk,tag=SpawnMe] run summon husk ~ ~ ~ {IsBaby:1b,PersistenceRequired:1b,Tags:["KillAtEnd"]}
 execute if entity @s[tag=!Small] as @e[type=armor_stand,tag=husk,tag=SpawnMe] run summon husk ~ ~ ~ {PersistenceRequired:1b,Tags:["KillAtEnd"]}
