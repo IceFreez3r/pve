@@ -14,7 +14,6 @@ scoreboard players reset @e State
 scoreboard players reset @e Time
 
 #Remove temporary armorstands and enemies
-#TODO: Kill smaller slimes/magma cubes aswell
 kill @e[tag=KillAtEnd]
 kill @e[type=vex]
 
