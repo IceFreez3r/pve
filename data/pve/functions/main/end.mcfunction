@@ -25,4 +25,6 @@ kill @e[type=item]
 #Let there be light
 time set day
 
+advancement revoke @a from pve:repeat
+
 function pve:main/reset_blockstates

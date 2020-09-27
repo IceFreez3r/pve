@@ -1,19 +1,20 @@
 {
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "criteria": {
-        "Found Extralife": {
+        "Found Arenaticket": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [
                     {
-                        "nbt": "{Extralife:1}"
+                        "item": "minecraft:paper",
+                        "nbt": "{display:{Name:'{\"text\":\"Arenaticket\",\"color\":\"dark_red\",\"bold\":true}',Lore:['{\"text\":\"Get ready for the fight!\",\"color\":\"gray\"}']},HideFlags:1,Enchantments:[{id:\"minecraft:mending\",lvl:1s}]}"
                     }
                 ]
             }
         }
     },
     "rewards": {
-        "function": "pve:main/extralife"
+        "function": "pve:arena/acquired_arenaticket"
     },
     "parent": "pve:repeat"
 }
