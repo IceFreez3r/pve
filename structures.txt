@@ -7,3 +7,10 @@ lava_bridge
 ghast_station
 ship
 ship_2
+
+stormcloud_black_wool
+stormcloud_gray_wool
+stormcloud_light_gray_wool
+stormcloud_black_concrete
+stormcloud_gray_concrete
+stormcloud_light_gray_concrete
