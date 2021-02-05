@@ -1,7 +1,7 @@
 scoreboard players operation Game Time /= #20 constant
 tellraw @a [{"text":"The game is over.\nYou survived for "},{"score":{"name":"Game","objective":"Time"},"color":"dark_purple"},{"text":" seconds."}]
 
-tp @a @e[type=armor_stand,tag=Lobby,limit=1]
+tp @a[tag=Ready] @e[type=armor_stand,tag=Lobby,limit=1]
 
 #Set the Game State to Paused
 scoreboard players set Game State 0
